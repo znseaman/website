@@ -13,9 +13,9 @@ const Projects = () => (
       <h1 className="title">Projects</h1>
 
       <div className="row">
-        <a href="https://nextjs.org/docs" className="card">
-          <h3>Project 1 &rarr;</h3>
-          <p>Short description of the project</p>
+        <a href="/record-map" className="card">
+          <h3>Record Map &rarr;</h3>
+          <p>A map that records a layer with undo / redo actions</p>
         </a>
         <a href="https://nextjs.org/learn" className="card">
           <h3>Project 2 &rarr;</h3>
