@@ -17,6 +17,10 @@ const Projects = () => (
           <h3>Record Map &rarr;</h3>
           <p>A map that records a layer with undo / redo actions</p>
         </a>
+        <a href="/to_go_to_list" className="card">
+          <h3>To Go To List &rarr;</h3>
+          <p>A web application to keep track of the places you'd like to visit</p>
+        </a>
         {/* <a href="https://nextjs.org/learn" className="card">
           <h3>Project 2 &rarr;</h3>
           <p>Short description of the project</p>
