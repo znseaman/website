@@ -12,10 +12,11 @@ const About = () => (
     <div className="hero">
       <h1 className="title">About Me</h1>
       <p className="description">
-        American 🇺🇸 software developer living in Vancouver 🇨🇦.
+        American 🇺🇸 software developer 👨‍💻 living in Vancouver 🇨🇦
       </p>
-      <p className="description">Previously lived in Mexico City 🇲🇽.</p>
-      <p className="description">Speaks Spanish and French.</p>
+      <p className="description">Interested in JavaScript 🤖, geolocation 📍, web mapping  🗺  and geographic information systems 🌎 </p>
+      <p className="description">Previously lived in Mexico City 🇲🇽</p>
+      <p className="description">Speak Spanish 🇲🇽 and French 🇫🇷</p>
     </div>
 
     <style jsx>{`
