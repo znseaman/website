@@ -21,6 +21,10 @@ const Projects = () => (
           <h3>To Go To List &rarr;</h3>
           <p>A web application to keep track of the places you'd like to visit</p>
         </a>
+        <a href="/find_apartment" className="card">
+          <h3>Find Apartment &rarr;</h3>
+          <p>A web application to find an apartment in Vancouver</p>
+        </a>
         {/* <a href="https://nextjs.org/learn" className="card">
           <h3>Project 2 &rarr;</h3>
           <p>Short description of the project</p>
