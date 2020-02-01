@@ -1,25 +1,42 @@
 import React from "react";
 import Head from "next/head";
 import Nav from "../components/nav";
+import Footer from "../components/footer";
 
 const About = () => (
-  <div>
-    <Head>
-      <title>About Me</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
-    <Nav />
-    <div className="hero">
-      <h1 className="title">About Me</h1>
-      <p className="description">
-        American 🇺🇸 software developer 👨‍💻 living in Vancouver 🇨🇦
+  <>
+    <div className="content">
+      <Head>
+        <title>About Me</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Nav />
+      <div className="hero">
+        <h1 className="title">About Me</h1>
+        <p className="description">
+          American 🇺🇸 software developer 👨‍💻 living in Vancouver 🇨🇦
       </p>
-      <p className="description">Interested in JavaScript 🤖, geolocation 📍, web mapping  🗺  and geographic information systems 🌎 </p>
-      <p className="description">Previously lived in Mexico City 🇲🇽</p>
-      <p className="description">Speak Spanish 🇲🇽 and French 🇫🇷</p>
-    </div>
+        <p className="description">Interested in JavaScript 🤖, geolocation 📍, web mapping  🗺  and geographic information systems 🌎 </p>
+        <p className="description">Previously lived in Mexico City 🇲🇽</p>
+        <p className="description">Speak Spanish 🇲🇽 and French 🇫🇷</p>
+      </div>
 
-    <style jsx>{`
+      <style jsx>{`
+      :global(html, body) {
+        height: 100%;
+      }
+      :global(body) {
+        display: flex;
+        flex-direction: column;
+      }
+      :global(#__next) {
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 auto;
+      }
+      .content {
+        flex: 1 0 auto;
+      }
       .hero {
         width: 100%;
         color: #333;
@@ -65,7 +82,9 @@ const About = () => (
         color: #333;
       }
     `}</style>
-  </div>
+    </div>
+    <Footer />
+  </>
 );
 
 export default About;

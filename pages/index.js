@@ -1,22 +1,39 @@
 import React from "react";
 import Head from "next/head";
 import Nav from "../components/nav";
+import Footer from "../components/footer";
 
 const Home = () => (
-  <div>
-    <Head>
-      <title>Zachary Seaman</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
-    <Nav />
-    <div className="hero">
-      <h1 className="title">Zachary Seaman</h1>
-      <p className="description">
-        Full Stack JavaScript Geospatial Software Developer
+  <>
+    <div className="content">
+      <Head>
+        <title>Zachary Seaman</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Nav />
+      <div className="hero">
+        <h1 className="title">Zachary Seaman</h1>
+        <p className="description">
+          Full Stack JavaScript Geospatial Software Developer
       </p>
-    </div>
+      </div>
 
-    <style jsx>{`
+      <style jsx>{`
+      :global(html, body) {
+        height: 100%;
+      }
+      :global(body) {
+        display: flex;
+        flex-direction: column;
+      }
+      :global(#__next) {
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 auto;
+      }
+      .content {
+        flex: 1 0 auto;
+      }
       .hero {
         width: 100%;
         color: #333;
@@ -62,7 +79,9 @@ const Home = () => (
         color: #333;
       }
     `}</style>
-  </div>
+    </div>
+    <Footer />
+  </>
 );
 
 export default Home;

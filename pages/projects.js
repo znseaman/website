@@ -1,31 +1,33 @@
 import React from "react";
 import Head from "next/head";
 import Nav from "../components/nav";
+import Footer from "../components/footer";
 
 const Projects = () => (
-  <div>
-    <Head>
-      <title>Projects</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
-    <Nav />
-    <div className="hero">
-      <h1 className="title">Projects</h1>
+  <>
+    <div className="content">
+      <Head>
+        <title>Projects</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Nav />
+      <div className="hero">
+        <h1 className="title">Projects</h1>
 
-      <div className="row">
-        <a href="/record-map" className="card">
-          <h3>Record Map &rarr;</h3>
-          <p>A map that records a layer with undo / redo actions</p>
-        </a>
-        <a href="/to_go_to_list" className="card">
-          <h3>To Go To List &rarr;</h3>
-          <p>A web application to keep track of the places you'd like to visit</p>
-        </a>
-        <a href="/find_apartment" className="card">
-          <h3>Find Apartment &rarr;</h3>
-          <p>A web application to find a place to rent in Vancouver</p>
-        </a>
-        {/* <a href="https://nextjs.org/learn" className="card">
+        <div className="row">
+          <a href="/record-map" className="card">
+            <h3>Record Map &rarr;</h3>
+            <p>A map that records a layer with undo / redo actions</p>
+          </a>
+          <a href="/to_go_to_list" className="card">
+            <h3>To Go To List &rarr;</h3>
+            <p>A web application to keep track of the places you'd like to visit</p>
+          </a>
+          <a href="/find_apartment" className="card">
+            <h3>Find Apartment &rarr;</h3>
+            <p>A web application to find a place to rent in Vancouver</p>
+          </a>
+          {/* <a href="https://nextjs.org/learn" className="card">
           <h3>Project 2 &rarr;</h3>
           <p>Short description of the project</p>
         </a>
@@ -36,10 +38,22 @@ const Projects = () => (
           <h3>Project 3 &rarr;</h3>
           <p>Short description of the project</p>
         </a> */}
+        </div>
       </div>
-    </div>
 
-    <style jsx>{`
+      <style jsx>{`
+      :global(html, body) {
+        height: 100%;
+      }
+      :global(body) {
+        display: flex;
+        flex-direction: column;
+      }
+      :global(#__next){
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 auto;
+      }
       .hero {
         width: 100%;
         color: #333;
@@ -85,7 +99,9 @@ const Projects = () => (
         color: #333;
       }
     `}</style>
-  </div>
+    </div>
+    <Footer />
+  </>
 );
 
 export default Projects;
