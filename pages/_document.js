@@ -9,19 +9,15 @@ class MyDocument extends Document {
   render() {
     return (
       <html>
-        <Head />
-        <body>
-          <Main />
-          <NextScript />
-          <style jsx global>{`
+        <style jsx global>{`
           /* Global Style */
           body {
             margin: 0;
             font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir, Helvetica, sans-serif;
           }
           `}
-          </style>
-          <style jsx global>{`
+        </style>
+        <style jsx global>{`
           /* Global Structure */
           html, body {
             height: 100%;
@@ -42,7 +38,11 @@ class MyDocument extends Document {
             flex-shrink: 0;
           }
           `}
-          </style>
+        </style>
+        <Head />
+        <body>
+          <Main />
+          <NextScript />
         </body>
       </html>
     )
