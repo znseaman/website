@@ -7,7 +7,7 @@ const About = () => (
   <>
     <div className="content">
       <Head>
-        <title>About Me</title>
+        <title>About</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Nav />
