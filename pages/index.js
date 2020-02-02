@@ -19,7 +19,7 @@ const Home = () => (
           </p>
           <br />
           <p className="description">
-            Backend: NodeJS, Express
+            Backend: Node.js, Express
           </p>
           <p className="description">
             Frontend: JavaScript, React
@@ -41,9 +41,9 @@ const Home = () => (
       .title {
         margin: 0;
         width: 100%;
-        padding-top: 80px;
+        padding-top: 2em;
         line-height: 1.15;
-        font-size: 48px;
+        font-size: 2.5em;
       }
       .title,
       .description {

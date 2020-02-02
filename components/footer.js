@@ -33,7 +33,7 @@ const Footer = () => {
       a {
         color: #067df7;
         text-decoration: none;
-        font-size: 13px;
+        font-size: 1em;
         padding: 6px 8px;
         width: 100%;
         height: 100%;

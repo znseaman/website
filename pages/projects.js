@@ -52,9 +52,9 @@ const Projects = () => (
       .title {
         margin: 0;
         width: 100%;
-        padding-top: 80px;
+        padding-top: 2em;
         line-height: 1.15;
-        font-size: 48px;
+        font-size: 2.5em;
       }
       .title,
       .description {
@@ -81,13 +81,25 @@ const Projects = () => (
       .card h3 {
         margin: 0;
         color: #067df7;
-        font-size: 18px;
+        font-size: 1.2em;
       }
       .card p {
         margin: 0;
         padding: 12px 0 0;
-        font-size: 13px;
+        font-size: 1em;
         color: #333;
+      }
+
+      @media( max-width: 610px){
+        .row {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .card {
+          margin-bottom: 1em;
+        }
       }
     `}</style>
     </div>

@@ -12,7 +12,8 @@ const About = () => (
       </Head>
       <Nav />
       <div className="hero">
-        <h1 className="title">About Me</h1>
+        <h1 className="title">About</h1>
+        <h2 className="subtitle">Me</h2>
         <div className="column">
           <p className="description">
             I'm an American 🇺🇸 software developer 👨‍💻 living in Vancouver 🇨🇦
@@ -21,10 +22,10 @@ const About = () => (
           <p className="description">I've previously lived in Mexico City 🇲🇽</p>
           <p className="description">I speak Spanish 🇲🇽 and French 🇫🇷</p>
         </div>
-        <h1 className="title">About the Site</h1>
+        <h2 className="subtitle">The Site</h2>
         <div className="column">
           <p className="description">
-            The site was built using Next.js and hosted on <a href="https://m.do.co/c/c3f2c9d3a7be">DigitalOcean</a> (referral link).
+            The site was built using <a href="https://nextjs.org/">Next.js</a> and is hosted on <a href="https://m.do.co/c/c3f2c9d3a7be">DigitalOcean</a> (referral link).
           </p>
         </div>
       </div>
@@ -37,20 +38,26 @@ const About = () => (
         width: 100%;
         color: #333;
       }
-      .title {
+      .title, .subtitle {
         margin: 0;
         width: 100%;
-        padding-top: 80px;
+        padding-top: 2em;
         line-height: 1.15;
-        font-size: 48px;
+        font-size: 2.5em;
       }
       .title,
+      .subtitle,
       .description {
         text-align: center;
       }
+      .subtitle {
+        padding-top: 2.5em;
+        line-height: 1.15;
+        font-size: 1.5em;
+      }
       .column {
         max-width: 880px;
-        margin: 80px auto 40px;
+        margin: 10px auto 10px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -76,12 +83,12 @@ const About = () => (
       .card h3 {
         margin: 0;
         color: #067df7;
-        font-size: 18px;
+        font-size: 1.2em;
       }
       .card p {
         margin: 0;
         padding: 12px 0 0;
-        font-size: 13px;
+        font-size: 1em;
         color: #333;
       }
     `}</style>
