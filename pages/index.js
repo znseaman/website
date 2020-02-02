@@ -13,9 +13,21 @@ const Home = () => (
       <Nav />
       <div className="hero">
         <h1 className="title">Zachary Seaman</h1>
-        <p className="description">
-          Full Stack JavaScript Geospatial Software Developer
-      </p>
+        <div className="column">
+          <p className="description">
+            Full Stack JavaScript Geospatial Software Developer
+          </p>
+          <br />
+          <p className="description">
+            Backend: NodeJS, Express
+          </p>
+          <p className="description">
+            Frontend: JavaScript, React
+          </p>
+          <p className="description">
+            Geospatial: Leaflet, GoogleMaps, PostGIS
+          </p>
+        </div>
       </div>
 
       <style jsx>{`
@@ -36,6 +48,13 @@ const Home = () => (
       .title,
       .description {
         text-align: center;
+      }
+      .column {
+        max-width: 880px;
+        margin: 80px auto 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
       }
       .row {
         max-width: 880px;

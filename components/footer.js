@@ -22,17 +22,25 @@ const Footer = () => {
         display: flex;
         justify-content: center;
       }
-      nav > ul {
+      footer > ul {
         padding: 4px 16px;
       }
       li {
         display: flex;
-        padding: 6px 8px;
+        flex: 1;
+        justify-content: center;
       }
       a {
         color: #067df7;
         text-decoration: none;
         font-size: 13px;
+        padding: 6px 8px;
+        width: 100%;
+        height: 100%;
+      }
+      a:hover {
+        background-color: #067df7;
+        color: white;
       }
     `}</style>
     </footer>

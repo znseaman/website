@@ -21,6 +21,12 @@ const About = () => (
           <p className="description">I've previously lived in Mexico City 🇲🇽</p>
           <p className="description">I speak Spanish 🇲🇽 and French 🇫🇷</p>
         </div>
+        <h1 className="title">About the Site</h1>
+        <div className="column">
+          <p className="description">
+            The site was built using Next.js and hosted on <a href="https://m.do.co/c/c3f2c9d3a7be">DigitalOcean</a> (referral link).
+          </p>
+        </div>
       </div>
 
       <style jsx>{`

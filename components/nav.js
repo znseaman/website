@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const links = [
   { href: "/projects", label: "Projects" },
-  { href: "/about", label: "About" }
+  { href: "/about", label: "About" },
 ].map(link => {
   link.key = `nav-link-${link.href}-${link.label}`;
   return link;
@@ -37,12 +37,18 @@ const Nav = () => (
       }
       li {
         display: flex;
-        padding: 6px 8px;
       }
       a {
         color: #067df7;
         text-decoration: none;
         font-size: 13px;
+        padding: 6px 8px;
+        width: 100%;
+        height: 100%;
+      }
+      a:hover {
+        background-color: #067df7;
+        color: white;
       }
       li:first-child {
         margin-right: auto;
