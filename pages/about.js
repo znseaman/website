@@ -13,12 +13,14 @@ const About = () => (
       <Nav />
       <div className="hero">
         <h1 className="title">About Me</h1>
-        <p className="description">
-          American 🇺🇸 software developer 👨‍💻 living in Vancouver 🇨🇦
-      </p>
-        <p className="description">Interested in JavaScript 🤖, geolocation 📍, web mapping  🗺  and geographic information systems 🌎 </p>
-        <p className="description">Previously lived in Mexico City 🇲🇽</p>
-        <p className="description">Speak Spanish 🇲🇽 and French 🇫🇷</p>
+        <div className="column">
+          <p className="description">
+            I'm an American 🇺🇸 software developer 👨‍💻 living in Vancouver 🇨🇦
+          </p>
+          <p className="description">I'm interested in JavaScript 🤖, geolocation 📍, web mapping  🗺  and geographic information systems 🌎 </p>
+          <p className="description">I've previously lived in Mexico City 🇲🇽</p>
+          <p className="description">I speak Spanish 🇲🇽 and French 🇫🇷</p>
+        </div>
       </div>
 
       <style jsx>{`
@@ -39,6 +41,13 @@ const About = () => (
       .title,
       .description {
         text-align: center;
+      }
+      .column {
+        max-width: 880px;
+        margin: 80px auto 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
       }
       .row {
         max-width: 880px;
