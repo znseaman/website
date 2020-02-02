@@ -19,18 +19,6 @@ const Home = () => (
       </div>
 
       <style jsx>{`
-      :global(html, body) {
-        height: 100%;
-      }
-      :global(body) {
-        display: flex;
-        flex-direction: column;
-      }
-      :global(#__next) {
-        display: flex;
-        flex-direction: column;
-        flex: 1 0 auto;
-      }
       .content {
         flex: 1 0 auto;
       }
