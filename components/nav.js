@@ -14,7 +14,7 @@ const Nav = () => (
     <ul>
       <li>
         <Link href="/">
-          <a>Zachary Seaman</a>
+          <a>Home</a>
         </Link>
       </li>
       {links.map(({ key, href, label }) => (
